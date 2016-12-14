@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid>
+	<Cfg id="myDashboard" IdChars="0123456789" NoHScroll="1" NumberId="1" SuppressCfg="1" IdNames="N" />
+	<Cfg SafeCSS='1'  />
+	<Cfg GroupSortMain="1" GroupRestoreSort="1"/>
+	<Cfg Group="workflowName"/>
+	<Head>
+		<Filter id="Filter1" Height="30" tradeUnitRange="1" tradeUnitShowMenu="0" tradeUnitButton="Defaults" tradeUnitDefaults="|*FilterOff|*RowsAll"
+			                               familyRange="1" familyShowMenu="0" familyButton="Defaults" familyDefaults="|*FilterOff|*RowsAll"/>
+	</Head>
+	<Solid>
+		<Group Cells="List,Custom" ListWidth="165" ListCustom="unknown" List="|none|<b>Workflow</b>|<b>Tâche</b>|<b>Utilisateur</b>" Cols="||workflowName|taskName|taskContributor"/>
+		<Tabber Cells="WF0,WF1,WF2,WF3"
+			      WF0ButtonText="Tous les workflows" WF0OnCheck="Grid.SetFilter('workflowNamefilter');" WF0="1"
+						WF1ButtonText="CREATION" WF1OnCheck="Grid.FilterTextRange('workflowName','creationWF','workflowNamefilter');"
+						WF2ButtonText="MODIFICATION" WF2OnCheck="Grid.FilterTextRange('workflowName','modificationWF','workflowNamefilter');"
+						WF3ButtonText="ARCHIVAGE" WF3OnCheck="Grid.FilterTextRange('workflowName','archivageWF','workflowNamefilter');" />
+	</Solid>
+	<Toolbar Styles='0'
+		       Cells='Reload,Repaint,Export,ExpandAll,CollapseAll,ZoomIn,ZoomOut,ZoomFit,Columns,Cfg'
+					 AddCopyMenu='' />
+	<LeftCols>
+		<C Name="workflowName" Type="Text" Width="150" Format="|/nxdoc/default/" SuggestServer="1" SuggestMin="3" SuggestDelay="500" SuggestType="Replace,All" IconAlign="Left" CanHide="0"/>
+	</LeftCols>
+	<Cols>
+		<C Name="taskId" Type="Text"/>
+		<C Name="taskName" Type="Text"/>
+		<C Name="itemCode" Type="Text"/>
+		<C Name="itemLabel" Type="Text"/>
+		<C Name="tradeUnit" Type="Text"/>
+		<C Name="gtin" Type="Text"/>
+		<C Name="PCB" Type="Text"/>
+		<C Name="cardPCB" Type="Text"/>
+		<C Name="family" Type="Text"/>
+		<C Name="subFamily" Type="Text"/>
+		<C Name="tradeMark" Type="Text"/>
+		<C Name="wfCircuit" Type="Text"/>
+		<C Name="wfStartDate" Type="Date"/>
+		<C Name="wfState" Type="Text"/>
+		<C Name="taskStartDate" Type="Date"/>
+		<C Name="taskEndDate" Type="Date"/>
+		<C Name="taskState" Type="Text"/>
+		<C Name="taskContributor" Type="Text"/>
+	</Cols>
+	<Header workflowName="Workflow" taskName="Tache" itemCode="Code article" itemLabel="Libellé article"/>
+	<Def>
+		<D Name="Group" Expanded="1" taskNameFormula=""count = "+count()" CalcOrder="taskName" Calculated="1" />
+	</Def>
+</Grid>

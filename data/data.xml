@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Grid>
+<Body>
+<B>
+<I workflowName="creationWF" taskName="MaTache10" itemCode="code1" itemLabel="label1" tradeUnit="CASE" gtin="123456789101" PCB="12" cardPCB="9" family="Mafamille 1" subFamily="Ma sous-famille 1" tradeMark="Ma marque 1" wfCircuit="Moncircuit 1" wfStartDate="2016-12-12" wfState="" taskStartDate="2016-12-06" taskEndDate="2016-12-06" taskState=" " taskContributor="aaa" />
+<I workflowName="modificationWF" taskName="MaTache11" itemCode="code2" itemLabel="label2" tradeUnit="PACK_OR_INNER_PACK" gtin="123456789101" PCB="12" cardPCB="9" family="Mafamille 1" subFamily="Ma sous-famille 1" tradeMark="Ma marque 1" wfCircuit="Moncircuit 1" wfStartDate="2016-12-12" wfState="" taskStartDate="2016-12-07" taskEndDate="" taskState="" taskContributor="" />
+<I workflowName="modificationWF" taskName="MaTache11" itemCode="code2" itemLabel="label2" tradeUnit="PACK_OR_INNER_PACK" gtin="123456789101" PCB="12" cardPCB="9" family="Mafamille 1" subFamily="Ma sous-famille 1" tradeMark="Ma marque 1" wfCircuit="Moncircuit 1" wfStartDate="2016-12-12" wfState="" taskStartDate="2016-12-07" taskEndDate="" taskState="" taskContributor="" />
+<I workflowName="modificationWF" taskName="MaTache11" itemCode="code2" itemLabel="label2" tradeUnit="PACK_OR_INNER_PACK" gtin="123456789101" PCB="12" cardPCB="9" family="Mafamille 1" subFamily="Ma sous-famille 1" tradeMark="Ma marque 1" wfCircuit="Moncircuit 1" wfStartDate="2016-12-12" wfState="" taskStartDate="2016-12-07" taskEndDate="" taskState="" taskContributor="" />
+<I workflowName="archivageWF" taskName="MaTache20" itemCode="code3" itemLabel="label3" tradeUnit="CASE" gtin="123456789101" PCB="12" cardPCB="9" family="Mafamille 1" subFamily="Ma sous-famille 1" tradeMark="Ma marque 1" wfCircuit="Moncircuit 1" wfStartDate="2016-12-12" wfState="" taskStartDate="2016-12-09" taskEndDate="" taskState="" taskContributor="" />
+</B>
+</Body>
+</Grid>
