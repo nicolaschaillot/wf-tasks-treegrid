@@ -9,12 +9,34 @@
     </script>
 </head>
 
+<style>
+  .task-state {
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+  }
+  .opened {
+    background-color: #4a96f9 !important;
+  }
+  .ended {
+    background-color: #25db8c !important;
+  }
+  .cancelled {
+    background-color: #7e7e7f !important;
+  }
+</style>
+
 <body>
     <!-- div style="width:1200px;height:715px;" id="divTata"-->
     <div id="myDashboard">
-        <treegrid id="wftasks" Data_Url="./data/data.xml" Layout_Url="./def/def.xml" Text_Url="./treegrid/Text_fr.xml" Upload_Format="XML" Upload_Type="Body" Upload_Xml="1" Debug="IO,Error,Problem,Info,Check,IOError,Cookie,Page,Event">
+        <treegrid id="wftasks"
+                  Data_Url="./data/data.xml"
+                  Layout_Url="./def/def.xml"
+                  Text_Url="./treegrid/Text_fr.xml"
+                  >
         </treegrid>
     </div>
 </body>
+<!-- Debug="IO,Error,Problem,Info,Check,IOError,Cookie,Page,Event" -->
 
 </html>
