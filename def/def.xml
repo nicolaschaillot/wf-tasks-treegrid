@@ -6,7 +6,7 @@
 	<Cfg NoHScroll="0" NoVScroll="1" MaxVScroll="900" SuppressCfg="0" Style="ExtJS" Editing="0" Deleting="0" FastColumns="1" /> <!-- removing MaxVScroll="500" for performances -->
 	<Cfg SafeCSS='1' />
 	<Cfg GroupSortMain="1" GroupRestoreSort="1"/>
-	<Cfg Group="tasktargetdocumentcode"/>
+	<Cfg Group="taskname"/>
 	<Cfg Paging="2" AllPages="0" PageLength="50" MaxPages="20"/>
 	<Cfg PersistentCfg="1" />
 
