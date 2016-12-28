@@ -2,7 +2,6 @@
 
 	<!-- Basic grid configuration -->
    <Cfg
-      Code="STAEBGGJLUIBMB"
       DefaultsVersion="120101"
 
 		AutoVersion="1" SuppressCfg="0" DefaultCfg="3" DefaultCfgMenu="1"
